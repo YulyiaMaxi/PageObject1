@@ -17,6 +17,6 @@ public class VerificationPage {
   public DashboardPage validVerify(DataHelper.VerificationCode verificationCode) {
     codeField.setValue(verificationCode.getCode());
     verifyButton.click();
-    return new DashboardPage();
+    return new DashboardPage(); // создаем новый экз.класса
   }
 }
