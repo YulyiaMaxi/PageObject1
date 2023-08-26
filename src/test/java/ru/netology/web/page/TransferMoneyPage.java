@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 
-public class TransferMoneyPage {
+public class TransferMoneyPage { // страница пополнения карт
     private final SelenideElement amountNew = $("[data-test-id = amount] input");
     private final SelenideElement cardFrom = $("[data-test-id = from] input");
     private final SelenideElement header = $("[data-test-id = dashboard]");

@@ -49,6 +49,9 @@ return new Random().nextInt() + 1;
         private String cardNumber;
         private String testID;
 
+        public String getTestId() {
+            return testID;
+        }
     }
     @Value
     public static class AuthInfo {
