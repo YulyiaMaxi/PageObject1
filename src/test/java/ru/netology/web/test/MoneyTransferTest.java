@@ -17,7 +17,8 @@ class MoneyTransferTest {
 
     @Test //BeforeEach
         // в предусловии выполняется часть сценария
-    void setup() { // не забываем про метод setup, который устанавливает следующую логику шагов         open("http://localhost:9999");
+    void setup() { // не забываем про метод setup, который устанавливает следующую логику шагов        
+        open("http://localhost:9999");
         var loginPage = new LoginPage();
         var authInfo = DataHelper.getAuthInfo(); // получаем данные авторизации
         var verificationPage = loginPage.validLogin(authInfo);//вставляем данные авторизации
